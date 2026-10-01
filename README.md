@@ -9,3 +9,4 @@ Web版やクライアントmod/リソースパックによる可視化, 利便�
 このバージョンはVer.0.2です<br>
 Ver.1.0未満のファイルの正式使用は推奨されません<br>
 
+![Anurag's GitHub stats](https://vercel.app)
