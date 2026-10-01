@@ -1,0 +1,14 @@
+Python 3.14.7 (リスクは高いが最新バージョン。3.15が出るため、現時点で3.14にとって"最新のPython"である最後のバージョン)
+
+【ライブラリたち↓】
+
+numpy
+scipy
+pillow
+openpyxl
+darkdetect
+
+
+【installコマンド】
+
+pip install numpy scipy pillow openpyxl darkdetect
