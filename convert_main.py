@@ -911,7 +911,7 @@ for y in range(cam_y):
         rgb_tuple = tuple(cam_arr[y, x])
         text_value = inv_gid.get(rgb_tuple, "")
 
-        # セルへの書き込みと装飾 (サイズ設定は破壊されません)
+        # セルへの書き込みと装飾
         cell.value = text_value
         cell.font = cell_font
         cell.alignment = cell_alignment
