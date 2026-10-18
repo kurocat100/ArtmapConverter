@@ -7,8 +7,8 @@ scipy
 pillow
 openpyxl
 darkdetect
-
+cumstomtkiner
 
 【installコマンド】
 
-pip install numpy scipy pillow openpyxl darkdetect
+python -m pip install numpy scipy pillow openpyxl darkdetect cumstomtkiner CTkMessagebox scikit-image pyinstaller
