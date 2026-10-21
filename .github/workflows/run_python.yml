@@ -1,0 +1,29 @@
+name: Run Python Script
+
+on:
+  push:
+    branches: [ "Ver.0.4-(alpha)"] # ブランチにコードがプッシュされたら実行
+  pull_request: 
+    branches: [ "Ver.0.4-(alpha)" ]
+  workflow_dispatch: # 以下:手動を実行設定
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest # 実行するOSにLinuxを指定してる
+
+    steps:
+
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.14'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrage pip
+        if[ -f requirements.txt]; then pip instakk -r requirements.txt;fi
+    - name: Run py script
+      run: |
+        Python main.py
+
