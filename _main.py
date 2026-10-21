@@ -7,6 +7,7 @@ from pathlib import Path
 # library(third party)
 import tkinter as tk
 from tkinter import messagebox
+from tkinter import PhotoImage
 import customtkinter as ctk
 from customtkinter import filedialog
 from CTkMessagebox import CTkMessagebox
@@ -33,7 +34,9 @@ def get_resource_path(relative_path):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
 
+
 chibiki_icon_path = get_resource_path("chibiki.ico")
+chibiki_png_path = get_resource_path("chibiki.png") # Linux/mac用
 
 def get_download_path():
     # ユーザーのホームディレクトリ（C:\Users\ユーザー名）を取得
@@ -51,7 +54,15 @@ class ArtmapConverter(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("Artmap Converter🖌"+VERSION)
-        self.iconbitmap(chibiki_icon_path)
+        if sys.platform.startswith('win'):
+        # Windowsなら.icoでアイコンにする
+            self.iconbitmap(chibiki_icon_path)
+        else:
+        # Linux/macなら.pngを読み込んでアイコンにする
+            if os.path.exists(chibiki_png_path):
+                ico_img = PhotoImage(file=chibiki_png_path)
+                self.iconphoto(False, ico_img)
+        
         self.geometry("750x500")
         
         self.grid_columnconfigure(1, weight=1)  
