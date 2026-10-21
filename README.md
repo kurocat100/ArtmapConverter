@@ -2,7 +2,7 @@
 Make drawing easier by Artmap (Artmap: Minecraft Plugin)
 <br>
 <h2>変更点</h2>
-<b><span style="color:red;">ファイル名を変更し、_mainのみアンダーバーにしました</span></b>
+ファイル名を変更し、_mainのみアンダーバーにしました
 <br>
 _mainファイルを1から作り直し、GUIを追加しました
 <br>
