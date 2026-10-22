@@ -1,14 +1,5 @@
-Python 3.14.7 (リスクは高いが最新バージョン。3.15が出るため、現時点で3.14にとって"最新のPython"である最後のバージョン)
+Python 3.14.7 
 
-【ライブラリたち↓】
-
-numpy
-scipy
-pillow
-openpyxl
-darkdetect
-cumstomtkiner
-
-【installコマンド】
-
+【install一括コマンド(requirements.txtの下位互換)】
+完全に環境を揃えられない場合は使用しないでください
 python -m pip install numpy scipy pillow openpyxl darkdetect cumstomtkiner CTkMessagebox scikit-image pyinstaller
