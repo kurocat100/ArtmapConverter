@@ -3,6 +3,8 @@ Make drawing easier by Artmap (Artmap: Minecraft Plugin)
 <br>
 <h2>変更点</h2>
 未完です
+<br>
+This is incomplete.
 <h2>注意点</h2> 
 ●<p style="padding-left: 10px;margin-top:0">このバージョンはVer.0.5です</p>
 。<p style="padding-left: 10px;margin-top:0">Ver.0.3未満のbranch、または最新でないexeファイルの正式使用は推奨されません</p>
